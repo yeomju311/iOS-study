@@ -15,6 +15,15 @@ class ViewController: UIViewController {
 		// Do any additional setup after loading the view.
 	}
 
+	@IBAction func hello() {
+		//print("hello world")
+		
+		// add alert
+		let alert = UIAlertController(title: "hello", message: "first app", preferredStyle: .alert)
+		let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+		alert.addAction(action)
+		present(alert, animated: true, completion: nil)
+	}
 
 }
 
