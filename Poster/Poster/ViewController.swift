@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 		// Do any additional setup after loading the view.
 	}
 
-	@IBAction func hello() {
+	@IBAction func showAlert() {
 		//print("hello world")
 		
 		// add alert
@@ -24,6 +24,15 @@ class ViewController: UIViewController {
 		alert.addAction(action)
 		present(alert, animated: true, completion: nil)
 	}
+	
+	@IBAction func challenge() {
+		// add alert
+		let alert = UIAlertController(title: "hello", message: "도전", preferredStyle: .alert)
+		let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+		alert.addAction(action)
+		present(alert, animated: true, completion: nil)
+	}
+	
 
 }
 
